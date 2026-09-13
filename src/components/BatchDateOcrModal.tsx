@@ -172,6 +172,13 @@ export const BatchDateOcrModal: React.FC<BatchDateOcrModalProps> = ({
         }),
       });
 
+      if (!res.ok) {
+        if (res.status === 404) {
+          throw new Error('OCR API is unavailable. Start the app with "npm run dev" or "npm start".');
+        }
+        throw new Error(`OCR service returned ${res.status}`);
+      }
+
       let data: OCRResult;
       try {
         data = await res.json();

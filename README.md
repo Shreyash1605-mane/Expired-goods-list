@@ -18,3 +18,5 @@ View your app in AI Studio: https://ai.studio/apps/d1af16ab-1282-40fc-a006-55999
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+The app uses the Express server for the `/api/ocr-details` endpoint. Use `npm run dev` for development or `npm run build && npm start` for production. Do not use `vite preview` or deploy only the generated `dist` folder, because those serve the frontend without the OCR API.
