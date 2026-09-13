@@ -1,0 +1,10 @@
+{
+  "name": "GodownScan — Damage & Expiry Goods Data Capture",
+  "description": "Godown damage and expiry goods barcode scanner, batch and date OCR reader, and Excel report generator.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
